@@ -15,10 +15,10 @@
 \newbool{headsepline}
 \newbool{consistentlayout}
 \LoadClass{\baseclass}
-% Simple interface for the user  to customize the chapter titles 
+% Simple interface for the user  to customize the chapter titles
 
 %----------------------------------------------------------------------------------------
-%	CLASS OPTIONS
+%  CLASS OPTIONS
 %----------------------------------------------------------------------------------------
 \renewcommand{\baselinestretch}{1.2} % Giãn dòng 1.2
 \setlength{\parskip}{3pt} % Spacing after
@@ -32,7 +32,8 @@
 \titleformat*{\subsection}{\fontsize{13pt}{0pt}\selectfont \bfseries}
 
 \titlespacing*{\subsubsection}{0pt}{6pt}{0pt} % Heading 3
-\titleformat*{\subsubsection}{\fontsize{13pt}{0pt}\selectfont \bfseries \itshape}
+\titleformat*{\subsubsection}{\fontsize{13pt}{0pt}\selectfont
+\bfseries \itshape}
 
 \titlespacing*{\paragraph}{0pt}{0pt}{0pt} % Heading 4
 \titleformat*{\paragraph}{\fontsize{13pt}{0pt}\selectfont \itshape}
@@ -55,19 +56,23 @@
 \newcolumntype{g}{>{\hsize=5\hsize}X}
 \renewcommand{\tabularxcolumn}[1]{>{\small}m{#1}}
 
-\renewcommand{\theequation}{\thesection.\arabic{equation}} % Thay đổi đánh số phương trình mặc định
+\renewcommand{\theequation}{\thesection.\arabic{equation}} % Thay đổi
+% đánh số phương trình mặc định
 %\newtheorem{theorem}{Định lý}[section]
 %\newtheorem{defn}[theorem]{Định nghĩa}
 %\newtheorem{corollary}[theorem]{Hệ quả}
 %\newtheorem{lemma}[theorem]{Bổ đề}
 %----------------------------------------------------------------------------------------
-%	REQUIRED PACKAGES
+%  REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
-\RequirePackage{babel} % Required for automatically changing names of document elements to languages besides english
-\RequirePackage{scrbase} % Required for handling language-dependent names of sections/document elements
+\RequirePackage{babel} % Required for automatically changing names of
+% document elements to languages besides english
+\RequirePackage{scrbase} % Required for handling language-dependent
+% names of sections/document elements
 \RequirePackage{scrhack} % Loads fixes for various packages
 \RequirePackage{setspace} % Required for changing line spacing
-\RequirePackage{longtable} % Required for tables that span multiple pages (used in the symbols, abbreviations and physical constants pages)
+\RequirePackage{longtable} % Required for tables that span multiple
+% pages (used in the symbols, abbreviations and physical constants pages)
 \RequirePackage{siunitx} % Required for \SI commands
 \RequirePackage{graphicx} % Required to include images
 \graphicspath{{Figures/}{./}} % Specifies where to look for included images
@@ -77,21 +82,21 @@
 %----------------------------------------------------------------------------------------
 \RequirePackage{geometry}
 \geometry{
-	paper=a4paper, % Change to letterpaper for US letter
-	inner=3cm, % Inner margin
-	outer=2cm, % Outer margin
-	bindingoffset=.5cm, % Binding offset
-	top=2cm, % Top margin
-	bottom=2cm, % Bottom margin
-%	twoside,
-	footnotesep=24pt plus 2pt minus 12pt
+  paper=a4paper, % Change to letterpaper for US letter
+  inner=3cm, % Inner margin
+  outer=2cm, % Outer margin
+  bindingoffset=.5cm, % Binding offset
+  top=2cm, % Top margin
+  bottom=2cm, % Bottom margin
+  %  twoside,
+  footnotesep=24pt plus 2pt minus 12pt
 }
-	%showframe, % Uncomment to show how the type block is set on the page
-	
+%showframe, % Uncomment to show how the type block is set on the page
+
 \raggedbottom
 
 %----------------------------------------------------------------------------------------
-%	PENALTIES
+%  PENALTIES
 %----------------------------------------------------------------------------------------
 \doublehyphendemerits=10000 % No consecutive line hyphens
 \brokenpenalty=10000 % No broken words across columns/pages
@@ -100,7 +105,7 @@
 \interfootnotelinepenalty=9999 % Almost never break footnotes
 
 %----------------------------------------------------------------------------------------
-%	ABBREVIATIONS PAGE DESIGN
+%  ABBREVIATIONS PAGE DESIGN
 %----------------------------------------------------------------------------------------
 \renewcommand{\contentsname}{MỤC LỤC}
 \renewcommand{\listfigurename}{DANH MỤC HÌNH VẼ}
@@ -110,24 +115,28 @@
 %----------------------------------------------------------------------------------------
 
 \ifbool{hyperrefsupport}{% If the nohyperref class option has not been specified
-\AtEndPreamble{\RequirePackage{hyperref}
-\hypersetup{pdfpagemode={UseOutlines},
-bookmarksopen=true,
-bookmarksopenlevel=0,
-hypertexnames=false,
-colorlinks=true,% Set to false to disable coloring links
-citecolor=black,% The color of citations
-linkcolor=black,% The color of references to document elements (sections, figures, etc)
-urlcolor=black,% The color of hyperlinks (URLs)
-pdfstartview={FitV},
-unicode,
-breaklinks=true,
-}
+  \AtEndPreamble{\RequirePackage{hyperref}
+    \hypersetup{pdfpagemode={UseOutlines},
+      bookmarksnumbered=true,
+      bookmarksopen=true,
+      bookmarksopenlevel=0,
+      hypertexnames=false,
+      colorlinks=true,% Set to false to disable coloring links
+      citecolor=black,% The color of citations
+      linkcolor=black,% The color of references to document elements
+      % (sections, figures, etc)
+      urlcolor=black,% The color of hyperlinks (URLs)
+      pdfstartview={FitV},
+      unicode,
+      breaklinks=true,
+    }
 
-\pdfstringdefDisableCommands{% If there is an explicit linebreak in a section heading (or anything printed to the pdf-bookmarks), it is replaced by a space
-	\let\\\space%
-}
-	}
+    \pdfstringdefDisableCommands{% If there is an explicit linebreak
+      % in a section heading (or anything printed to the
+      % pdf-bookmarks), it is replaced by a space
+      \let\\\space%
+    }
+  }
 }
 
 %----------------------------------------------------------------------------------------
