@@ -53,7 +53,7 @@
     \begin{tabular}{|l|l|}
       \hline
       \textbf{Tên sinh viên} & \textbf{Mã số sinh viên} \\ \hline
-      ĐINH HOÀNG SƠN    & 2241853E \\ \hline
+      ĐINH HOÀNG SƠN    & 20241853E \\ \hline
       LÊ QUÝ DƯƠNG      & 20241714E \\ \hline
       NGUYỄN QUANG MINH & 20241808E \\ \hline
       VŨ MINH PHƯƠNG    & 20250954E \\ \hline
@@ -122,12 +122,10 @@
 % SUMMARY PART
 \section*{TÓM TẮT ĐỒ ÁN}
 \thispagestyle{empty}
-Tóm tắt nội dung của đồ án tốt nghiệp trong khoảng tối đa 300 chữ.
-Phần tóm tắt cần nêu được các ý: vấn đề cần thực hiện; phương pháp
-thực hiện; công cụ sử dụng (phần mềm, phần cứng…); kết quả của đồ án
-có phù hợp với các vấn đề đã đặt ra hay không; tính thực tế của đồ
-án, định hướng phát triển mở rộng của đồ án (nếu có); các kiến thức
-và kỹ năng mà sinh viên đã đạt được.
+
+Báo cáo bao gồm bản dịch tiếng Việt từ chương 11 tới 15 của cuốn sách "Advanced
+Technology for Smart Buildings" viết bởi tác giả James Sinopoly
+\cite{sinopoli2016advanced}.
 
 \thispagestyle{empty}
 \cleardoublepage
@@ -478,24 +476,244 @@ km, trạm cỡ nhỏ thường chỉ phủ trong phạm vi khoảng 10 m.
 \setcounter{table}{0}
 %---------------------------------------------------------%
 
-Mỗi chương sẽ bắt đầu bằng một đoạn giới thiệu các phần chính được
-trình bày trong chương đó, dài khoảng từ 5 đến 10 dòng và kết thúc
-bằng một đoạn tóm tắt các kết luận chính của chương. Chú ý phân bổ
-chiều dài của mỗi chương cho cân đối và hợp lý \cite{658198}.
+Mặc dù dòng điện xoay chiều (AC) là hệ thống phân phối điện năng phổ
+biến trên toàn thế giới cho các tòa nhà, nhưng chúng ta lại luôn được
+bao quanh bởi các thiết bị điện tử vận hành dựa trên dòng điện một
+chiều (DC). Các thiết bị này được cắm vào ổ cắm điện xoay chiều thông
+thường, nhưng sau đó dòng điện AC sẽ được chuyển đổi thành dòng điện
+DC — thường thông qua bộ chỉnh lưu hoặc bộ chuyển đổi — để cung cấp
+năng lượng cho các linh kiện và thiết bị bên trong. Bộ chỉnh lưu có
+chức năng chuyển đổi dòng điện AC (vốn có chiều thay đổi định kỳ)
+thành dòng điện DC (chỉ chạy theo một hướng duy nhất); quá trình này
+được gọi là chỉnh lưu. Hiện nay, nhiều công trình xây dựng mới đang
+ứng dụng các nguồn năng lượng tái tạo như năng lượng mặt trời hoặc
+năng lượng gió, vốn có thể tạo ra cả điện AC lẫn điện DC. Một trong
+những lĩnh vực ngày càng sử dụng nhiều dòng điện DC là các thiết bị
+kỹ thuật số dùng bóng bán dẫn (transistor) — chẳng hạn như điện thoại
+thông minh, máy tính cá nhân, tivi màn hình phẳng và máy tính bảng.
+Một ví dụ điển hình mà ai cũng có thể thấy rõ là hiện có tới 6,8 tỷ
+thuê bao điện thoại di động; tất cả các thiết bị này đều cần và tiêu
+thụ dòng điện một chiều (DC).
+
+Theo giám đốc Sáng kiến Năng lượng \& Điện năng tại Đại học
+Pittsburgh, các thiết bị kỹ thuật số dành cho người tiêu dùng cùng
+những thiết bị như đèn LED và tấm pin năng lượng mặt trời chiếm tới
+20\% tổng lượng tiêu thụ điện năng.
+
+Lịch sử của dòng điện xoay chiều (AC) và dòng điện một chiều (DC) bắt
+đầu vào cuối những năm 1880 và 1890. Thomas Edison (người từng nắm
+  giữ kỷ lục thế giới với 1.093 bằng sáng chế cho các phát minh của
+mình) đã phát triển hệ thống truyền tải điện thương mại đầu tiên sử
+dụng dòng điện một chiều (DC). Sau khi ông triển khai khoảng 200 trạm
+phát điện, một "cuộc chiến dòng điện" đã nổ ra. Đối lập với việc sử
+dụng dòng điện một chiều là Nikola Tesla – nhà phát minh ra máy biến
+áp và dòng điện xoay chiều (AC) – cùng với George Westinghouse, một
+người ủng hộ dòng điện xoay chiều. Lập luận chính của họ là dòng điện
+một chiều không thể truyền tải đi xa (chỉ khoảng 1,5 dặm, tương đương
+2,4 km), trong khi dòng điện xoay chiều có thể truyền tải trên quãng
+đường hàng trăm dặm và phù hợp hơn với các trạm phát điện tập trung.
+"Cuộc chiến dòng điện" đôi lúc trở nên rất gay gắt, nhưng cuối cùng,
+dòng điện xoay chiều đã giành chiến thắng trong lĩnh vực sản xuất,
+truyền tải và phân phối điện năng.
+
+Dòng điện một chiều (DC) được mô tả là dòng điện chỉ chạy theo một
+hướng duy nhất. Điện áp và cường độ dòng điện có thể thay đổi theo
+thời gian, miễn là hướng của dòng điện không thay đổi. Dòng điện xoay
+chiều (AC) là dòng điện có hướng thay đổi theo chu kỳ. Hệ quả là mức
+điện áp cũng đảo chiều cùng với dòng điện. Dòng điện xoay chiều được
+sử dụng để cung cấp điện năng cho các ngôi nhà và tòa nhà văn phòng.
+
+Việc chuyển đổi dòng điện xoay chiều (AC) sang dòng điện một chiều
+(DC) hoặc ngược lại thường dẫn đến một lượng tổn hao năng lượng nhất
+định. Mặc dù hiệu suất chuyển đổi phụ thuộc vào cường độ dòng điện và
+điện áp, các thiết bị chuyển đổi thường đạt hiệu suất từ 90\% đến
+95\%, nhưng cũng có thể thấp hơn đáng kể. Như vậy, trong trường hợp
+tối ưu nhất, chúng ta vẫn lãng phí từ 5\% đến 10\% năng lượng trong
+quá trình chuyển đổi; con số này còn cao hơn nếu phải thực hiện nhiều
+lần chuyển đổi bằng các thiết bị có hiệu suất thấp. Để giảm thiểu tổn
+hao, quá trình chuyển đổi sang dòng điện một chiều (DC) nên được thực
+hiện ở giai đoạn trước khi cấp điện cho từng thiết bị riêng lẻ.
+
+Việc triển khai hệ thống điện một chiều (DC) trong các tòa nhà sẽ là
+một thay đổi mang tính đột phá, nhưng những lợi ích mà cơ sở hạ tầng
+DC mang lại thực sự rất thuyết phục. Các phần tiếp theo sẽ trình bày
+những quan sát và ví dụ về việc ứng dụng dòng điện một chiều (DC)
+trong các tòa nhà – cả những ứng dụng hiện có lẫn các khả năng tiềm
+năng trong tương lai.
 
 \subsection{Mạng máy tính}
 
+Trong nhiều năm qua, hầu hết các mạng CNTT quy mô lớn đều cung cấp
+nguồn điện một chiều (DC) cho các thiết bị thông qua công nghệ Power
+over Ethernet (PoE). PoE là một tiêu chuẩn của IEEE, cho phép truyền
+dữ liệu và cung cấp nguồn điện DC cho thiết bị thông qua cáp Ethernet
+bốn cặp dây. Hầu hết các tòa nhà hiện nay có lẽ đã có sẵn mạng CNTT
+hoặc cơ sở hạ tầng phục vụ việc phân phối nguồn điện DC. Các thiết bị
+sử dụng PoE thường bao gồm điện thoại IP, điểm truy cập Wi-Fi, camera
+giám sát video, đầu đọc thẻ kiểm soát ra vào, cũng như các bộ tập
+trung (hub) và bộ chuyển mạch (switch) Ethernet từ xa. Việc ứng dụng
+PoE không còn giới hạn ở các thiết bị CNTT thông thường mà đã mở rộng
+sang nhiều loại thiết bị khác như đồng hồ, hệ thống phát hiện khí và
+các bộ điều khiển trong phòng nghe nhìn (AV).
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics{images/h12.1.png} % Link to figure
+  \caption{Bộ chỉnh lưu} % figure name
+  \label{images/h12.1.png}  % cross-reference for figure
+\end{figure}
+
+Hình \ref{images/h12.1.png} mô tả bộ chỉnh lưu - một thiết bị điện có
+chức năng chuyển đổi dòng điện xoay chiều (AC) — loại dòng điện thay
+đổi chiều định kỳ — thành dòng điện một chiều (DC), là loại dòng điện
+chỉ chạy theo một hướng duy nhất. Quá trình này được gọi là sự chỉnh lưu.
+
 \subsection{Trung tâm dữ liệu}
+
+Phần lớn thiết bị trong một trung tâm dữ liệu, chẳng hạn như máy chủ,
+động cơ và pin, đều sử dụng nguồn điện một chiều (DC). Quá trình
+chuyển đổi điện năng diễn ra tại trung tâm dữ liệu có thể bao gồm:
+chuyển đổi nguồn điện xoay chiều (AC) đầu vào thành điện một chiều
+(DC) tại bộ lưu điện (UPS), sau đó chuyển đổi ngược lại thành điện
+xoay chiều (AC), và cuối cùng lại chuyển đổi thành điện một chiều
+(DC) bên trong bộ nguồn của từng máy chủ.
+
+Một số trung tâm dữ liệu đã chuyển sang sử dụng kiến trúc điện một
+chiều (DC), trong đó nguồn điện xoay chiều (AC) chính cấp vào trung
+tâm dữ liệu được chuyển đổi thành điện một chiều (DC) để phân phối
+cho các thiết bị. Cách tiếp cận này mang lại ba lợi ích chính: (1)
+giảm tổn hao điện năng do không phải thực hiện nhiều lần chuyển đổi
+giữa AC và DC, từ đó giúp tiết kiệm năng lượng; (2) cơ sở hạ tầng DC
+chiếm ít không gian hơn, đồng thời các thiết bị CNTT có thể kết nối
+trực tiếp với hệ thống pin dự phòng; và (3) giảm nhu cầu làm mát. Các
+công ty như Facebook và SAP đã thử nghiệm sử dụng nguồn điện một
+chiều (DC) tại các trung tâm dữ liệu của họ. Tập đoàn viễn thông Nhật
+Bản NTT hiện có bốn trung tâm dữ liệu tại khu vực Tokyo đang vận hành
+bằng nguồn điện một chiều (DC); trong đó, trung tâm máy chủ tại thành
+phố Atsugi là cơ sở đầu tiên của họ cung cấp dịch vụ cho các khách
+hàng bên ngoài.
+
+Một nghiên cứu của Phòng thí nghiệm Lawrence Berkeley (LBL) cho thấy
+mức tiêu thụ năng lượng giảm 7\% và hiệu suất tăng 28\% khi so sánh
+các trung tâm dữ liệu sử dụng nguồn điện một chiều (DC) với các trung
+tâm dữ liệu sử dụng nguồn điện xoay chiều (AC). Nghiên cứu của LBL
+cũng khẳng định: “Chúng tôi đã chứng minh được với ngành công nghiệp
+trung tâm dữ liệu rằng các hệ thống cung cấp điện DC là giải pháp khả
+thi; chúng có thể đạt hiệu suất cao hơn ít nhất 20\% so với các hệ
+thống cung cấp điện AC hiện nay, đồng thời đáng tin cậy hơn và có
+tiềm năng tiết kiệm chi phí hơn về lâu dài.” Hiệu suất không phải là
+lợi ích duy nhất mà nguồn điện DC mang lại cho các trung tâm dữ liệu.
+BJ Sonnenberg, đại diện của EMerge Alliance kiêm quản lý phát triển
+kinh doanh tại Emerson Network Power, cho biết: “Các thiết bị phân
+phối nguồn điện DC trong trung tâm dữ liệu thường nhỏ gọn hơn, chiếm
+ít diện tích sàn hơn tới 33\% và có độ tin cậy cao hơn từ 200\% đến
+1000\%” so với các thiết bị tương đương sử dụng nguồn điện AC. Một
+nghiên cứu do Validus (thuộc ABB) và GE thực hiện cho thấy các trung
+tâm dữ liệu sử dụng nguồn điện DC có thể giúp giảm tới 36\% tổng chi
+phí trong suốt vòng đời hoạt động.
+
+Viện Nghiên cứu Điện lực (EPRI) đã xác định được ít nhất một chục
+trung tâm dữ liệu mới được xây dựng trong hai năm qua sử dụng nguồn
+điện một chiều (DC) điện áp cao; con số này chưa bao gồm nhiều văn
+phòng viễn thông trung tâm hiện đang vận hành bằng nguồn điện DC điện
+áp thấp hơn. Một trung tâm dữ liệu sử dụng nguồn điện DC có công suất
+lớn nhất từ trước đến nay vừa được công bố bởi ABB – tập đoàn hàng
+đầu về công nghệ năng lượng và tự động hóa – cùng với Green, một nhà
+cung cấp dịch vụ công nghệ thông tin và truyền thông có trụ sở tại
+Thụy Sĩ. Trung tâm dữ liệu này nằm trong khuôn viên mở rộng tại
+Zurich-West của Green và được xây dựng dựa trên công nghệ 380VDC –
+tiêu chuẩn do liên minh The Emerge Alliance đề xuất. Hệ thống này
+được kỳ vọng sẽ giúp giảm tới 20\% mức tiêu thụ điện năng, tính từ
+lưới điện đến tận các con chip xử lý cũng như trong quá trình làm mát.
 
 \subsection{Năng lượng tái tạo, xe điện và hệ thống lưu trữ}
 
+Các tấm pin năng lượng mặt trời được lắp đặt trên các tòa nhà tạo ra
+dòng điện một chiều (DC) hoặc dòng điện xoay chiều (AC).
+
 \subsection{Chiếu sáng}
+
+Đèn huỳnh quang compact sử dụng chấn lưu điện tử và đèn đi-ốt phát
+quang (LED) có hiệu suất cao hơn 25\% so với đèn sợi đốt truyền thống.
+Ưu điểm của đèn LED bao gồm tuổi thọ vận hành dài hơn, yêu cầu bảo
+trì ít hơn và giảm mức tiêu thụ năng lượng (giúp tiết kiệm khoảng 13\%
+\% năng lượng dành cho chiếu sáng).
+
+Việc sử dụng nguồn điện một chiều (DC) sẽ càng làm tăng thêm lợi
+thế của đèn LED, nhờ loại bỏ được nhu cầu cũng như chi phí chuyển
+đổi từ dòng điện xoay chiều (AC) sang dòng điện một chiều (DC) như hiện nay.
+
+Một số nhà sản xuất thiết bị chiếu sáng đã phát triển các hệ thống
+đèn LED vận hành bằng nguồn điện một chiều (DC).
 
 \subsection{Thiết bị gia dụng}
 
+Hầu hết các thiết bị gia dụng và đồ điện tử thông dụng đều vận hành
+dựa trên nguồn điện một chiều (DC).
+
+Các thiết bị này bao gồm máy tính, điện thoại, tivi và máy pha cà
+phê. Các loại động cơ sử dụng trong những ứng dụng như làm lạnh,
+thông gió hoặc bơm nước nếu chạy bằng nguồn điện một chiều (DC) thì
+sẽ đạt hiệu suất cao hơn đáng kể so với các hệ thống sử dụng nguồn
+điện xoay chiều (AC).
+
 \subsection{Hạ tầng điện một chiều}
 
+Armstrong, một nhà sản xuất các sản phẩm sàn và trần nhà, cung cấp
+một giải pháp có tên là DC FlexZone – một hệ thống khung trần treo
+đóng vai trò là cơ sở hạ tầng để truyền tải điện áp thấp một chiều
+(DC). Hệ thống này dựa trên các phương pháp lắp đặt trần treo thông
+thường và tuân theo "Tiêu chuẩn không gian sử dụng 24VDC" (24VDC
+Occupied Space Standard) do Emerge Alliance – một tổ chức phi lợi
+nhuận trong ngành – xây dựng.
+
 \subsection{Tiêu chuẩn}
+
+Emerge Alliance là một hiệp hội ngành bao gồm các thành viên từ các
+doanh nghiệp và viện nghiên cứu, tập trung vào việc phát triển các
+công nghệ và tiêu chuẩn liên quan đến điện một chiều (DC). Tổ chức
+này đã xây dựng tiêu chuẩn cho các tòa nhà thương mại (24VDC) cũng
+như trung tâm dữ liệu (380VDC), và dự kiến sẽ sớm triển khai tiêu
+chuẩn cho phân khúc nhà ở.
+
+Các chủ sở hữu tòa nhà, nhà thầu và kỹ sư sẽ tiếp tục lắp đặt và duy
+trì các hệ thống phân phối điện xoay chiều (AC) truyền thống trong
+các công trình; đồng thời, các hệ thống này có thể được bổ sung thêm
+nguồn năng lượng tái tạo từ mặt trời hoặc gió – vốn có khả năng tạo
+ra cả điện một chiều (DC) hoặc điện xoay chiều (AC).
+
+Một vấn đề trong việc áp dụng dòng điện một chiều (DC) là mặc dù các
+thiết bị có thể sử dụng nguồn DC ở bên trong, nhưng chúng thường được
+sản xuất và bán kèm với phích cắm hoặc bộ nguồn xoay chiều (AC). Đối
+với các công trình xây dựng mới, vấn đề này có thể được giải quyết
+bằng cách chọn mua các thiết bị có khả năng sử dụng trực tiếp nguồn
+DC. Đối với các tòa nhà hiện hữu, việc thay thế thiết bị cũ bằng các
+thiết bị sử dụng trực tiếp nguồn DC thường sẽ phụ thuộc vào các cơ
+hội trong quá trình cải tạo, mua sắm thiết bị mới hoặc thực hiện các
+chiến lược tiết kiệm năng lượng.
+
+Đôi khi, việc triển khai nguồn DC có thể gặp phải một số khó khăn.
+Hiện có rất ít người có kinh nghiệm trong việc lắp đặt hệ thống điện
+một chiều điện áp thấp. Các thiết bị bảo vệ mạch, cầu chì và vật liệu
+cách điện có thể cần được thiết kế lại. Các sản phẩm và thiết bị có
+thể cần được điều chỉnh; đồng thời, cần xây dựng các phương pháp đào
+tạo và kiểm thử. Ngoài ra, sự chấp thuận và áp dụng từ phía các kiến
+trúc sư, kỹ sư và nhà thầu đóng vai trò vô cùng quan trọng.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics{images/h12.3.png}
+  \caption{Vấn đề với dòng điện một chiều}
+  \label{images/h12.3.png}
+\end{figure}
+
+Hình \ref{images/h12.3.png} mô tả sự biến đổi của điện áp và dòng điện:
+
+\begin{itemize}
+  \item Pulsating: Dao động đập mạch (nhấp nhô theo chu kỳ)
+  \item Direct: Một chiều
+  \item Alternating: Xoay chiều
+\end{itemize}
 
 \newpage
 
