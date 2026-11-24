@@ -18,10 +18,10 @@ Chiều các ngày: 25/11, 9/12, 23/12
 
 ## Thành viên
 
-- Đinh Hoàng Sơn: 0989881525
+- Đinh Hoàng Sơn
 - Lê Quý Dương
-- Nguyễn Quang Minh: 0915164138
-- Vũ Minh Phương: 0784394926
+- Nguyễn Quang Minh
+- Vũ Minh Phương
 
 ## Yêu cầu hàng tuần
 
