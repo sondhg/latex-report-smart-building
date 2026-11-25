@@ -16,6 +16,10 @@ Chiều các ngày: 25/11, 9/12, 23/12
 
 1 tuần lên báo cáo thì tuần sau sẽ nghỉ. Cứ xen kẽ như thế.
 
+> Nhóm sẽ làm việc từ 12h30-15h tại phòng C7-E401, gồm các buổi 25/11, 9/12 và 23/12.
+
+Chú ý: bài tập lớn là không được phép vắng mặt, bạn nào vắng sẽ không được phép thi CK
+
 ## Thành viên
 
 - Đinh Hoàng Sơn
@@ -35,6 +39,12 @@ Chiều các ngày: 25/11, 9/12, 23/12
 - Có trong tay mục lục với đề mục chương và các phần như 1.2,2.1,2.2,3.1,.... để trao đổi với thày
 - Chọn tòa nhà và có trong tay phiếu điểm để trao đổi
 - Dịch hoàn thiện 1-2 chương, để trao đổi về từ chuyên dụng sử dụng, ngữ nghĩa
+
+Thầy dặn:
+
+- Chương 3 thêm phần 3.5, nói sơ qua về các khía cạnh KHÔNG PHẢI Enerrgy và Atmosphere. Chỉ cần xem bảng điểm và nói sơ qua: mục này toà Lotte được bao nhiêu điểm (coi như nhại lại cái phiếu điểm); đoán tại sao mục này full điểm, mục kia không full điểm, có thể là do gì. Chỉ cần 1 đoạn ngắn cho mỗi mục (ví dụ Sustainable Sites, Water Efficiency,...)
+- Để Chương 4 nói sâu về Energy Atmossphere của toà Lotte
+- Nếu phần nào không tìm được thông tin thì chỉ cần đoán
 
 ### Ngày 9/12:
 
